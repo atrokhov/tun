@@ -2,7 +2,6 @@ import os
 import subprocess
 
 tun = open('/dev/tun0', 'r+b')
-
 subprocess.check_call('ifconfig tun0 192.168.137.1 192.168.137.10 up', shell=True)
 
 while True:
